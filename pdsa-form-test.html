@@ -222,13 +222,13 @@
             />
 
             <TextArea label="WHAT?" subtitle="The specific idea or activity you are testing."
-              placeholder="E.g. Introduce Sunshine Circles at ECEC..."
+              placeholder="E.g. Introduce Sunshine Circles at ECEC, Pilot a shared transition meeting between MCH and kinder; trial a new communication notebook; test bilingual flyers for families..."
               value={formData.whatIdea} onChange={(v) => handleInputChange('whatIdea', v)}
               color={ACCENTS.what}
             />
 
             <TextArea label="WHY?" subtitle="Why are you testing this change?"
-              placeholder="E.g. Families reported confusion about registration steps..."
+              placeholder="E.g. Families reported confusion about registration steps, This will enable us to.., Strengthening relationships..."
               value={formData.whyReason} onChange={(v) => handleInputChange('whyReason', v)}
               color={ACCENTS.why}
             />
@@ -249,8 +249,8 @@
               color={ACCENTS.who}
             />
 
-            <TextArea label="HOW?" subtitle="What practical steps will you take to make this happen?"
-              placeholder="E.g. Co-design flyers, hold weekly planning huddles..."
+            <TextArea label="HOW?" subtitle="What practical steps will you take to make this happen? If another service wished to use your idea, what would they need to know?"
+              placeholder="E.g. 'First, we...', Co-design flyers, hold weekly planning huddles..."
               value={formData.howSteps} onChange={(v) => handleInputChange('howSteps', v)}
               color={ACCENTS.how}
             />
@@ -269,8 +269,8 @@
               color={ACCENTS.when}
             />
 
-            <TextArea label="REFLECTIONS" subtitle="What worked, what didn’t, and what you’d change next time."
-              placeholder="E.g. Families engaged more when staff co-facilitated..."
+            <TextArea label="REFLECTIONS" subtitle="What worked, what didn’t, did anything surprise you, what might you change next time?"
+              placeholder="e.g. Families engaged more when sessions were co-facilitated; flyers too text-heavy; next time involve cultural advisor earlier"
               value={formData.reflections} onChange={(v) => handleInputChange('reflections', v)}
               color={ACCENTS.refl}
             />
@@ -307,3 +307,4 @@
   </script>
 </body>
 </html>
+
