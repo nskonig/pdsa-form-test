@@ -139,7 +139,6 @@
           'Early Start Kindergarten',
           'Kindergarten attendance and readiness',
           'Kindergarten enrichment',
-          'Transition into primary school',
           'Emergency Relief and Basic Needs Support',
           'Family welfare and safety'
         ],
@@ -151,7 +150,6 @@
           'Library',
           'MCH centres',
           'Online',
-          'Primary schools',
           'Supported playgroup site/session'
         ]
       };
@@ -249,7 +247,8 @@
               color={ACCENTS.who}
             />
 
-            <TextArea label="HOW?" subtitle="What steps will you take to make this happen? If another service wished to use your idea, what would they need to know?"
+            <TextArea label="HOW?" subtitle="What steps will you take to make this happen? When will this happen (if relevant)? If another service wished to use your idea, what would they need to know? How is the design of this work culturally safe?"
+"
               placeholder="E.g. 'First, we...', Co-design flyers, hold weekly planning huddles..."
               value={formData.howSteps} onChange={(v) => handleInputChange('howSteps', v)}
               color={ACCENTS.how}
@@ -263,13 +262,7 @@
               color={ACCENTS.where}
             />
 
-            <TextArea label="WHEN?" subtitle="The timeframe for this change."
-              placeholder="E.g. Term 1 pilot, one-off event, ongoing..."
-              value={formData.when} onChange={(v) => handleInputChange('when', v)}
-              color={ACCENTS.when}
-            />
-
-            <TextArea label="REFLECTIONS" subtitle="What worked, what didn’t, did anything surprise you, what might you change next time?"
+            <TextArea label="REFLECTIONS" subtitle="What worked, what didn’t, did anything surprise you, what might you change next time? If universal, how could future design of this work be culturally safe?"
               placeholder="e.g. Families engaged more when sessions were co-facilitated; flyers too text-heavy; next time involve cultural advisor earlier"
               value={formData.reflections} onChange={(v) => handleInputChange('reflections', v)}
               color={ACCENTS.refl}
@@ -307,6 +300,7 @@
   </script>
 </body>
 </html>
+
 
 
 
