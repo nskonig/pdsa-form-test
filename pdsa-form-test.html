@@ -198,14 +198,14 @@
  <div className="mb-10 p-8 rounded-lg shadow-md text-white" style={{ background: ACCENTS.topbar }}>
   <h1 className="text-4xl font-bold mb-4">Best Start PDSA Form</h1>
   <p className="text-lg opacity-90 leading-relaxed">
-    <strong>Welcome!</strong> This form has been created for Best Start Facilitators in response to what you shared during the focus groups; that you wanted something <em>simpler</em> and <em>more flexible</em> for capturing your PDSA tests.<br/><br/>
+    <strong>Welcome!</strong> This form has been created for Best Start Facilitators in response to what you shared during the focus groups; that you wanted something <em>simpler</em> and <em>more flexible</em> for capturing your PDSAs.<br/><br/>
     This is just a basic prototype, but you’ll notice you can now select more than one option for the dropdown menus and also type something in <strong>‘Other’</strong> if the options provided don’t quite reflect the work you’re doing.<br/><br/>
     We’ve tried to make this version easy to use, while still keeping enough structure to support shared learning across sites.<br/><br/>
     We’re really open to ideas; this won’t be sent to DE until we’ve heard your feedback and made sure it genuinely works for you.
   </p>
 </div>
 
-            <MultiSelectDropdown label="Short Term Outcome" subtitle="Select the outcome areas this test aims to improve."
+            <MultiSelectDropdown label="Short Term Outcome" subtitle="Select the outcome areas this aims to improve."
               options={options.shortTermOutcome} value={formData.shortTermOutcome}
               onChange={(v) => handleInputChange('shortTermOutcome', v)}
               otherValue={formData.shortTermOutcomeOther}
@@ -221,13 +221,13 @@
               color="#6d28d9"
             />
 
-            <TextArea label="WHAT?" subtitle="The specific idea or activity you are testing."
-              placeholder="E.g. Introduce Sunshine Circles at ECEC, Pilot a shared transition meeting between MCH and kinder; trial a new communication notebook; test bilingual flyers for families..."
+            <TextArea label="WHAT?" subtitle="The specific idea or activity you are implementing."
+              placeholder="E.g. Introduce Sunshine Circles at ECEC, Pilot a shared transition meeting between MCH and kinder; trial a new communication notebook; bilingual flyers for families..."
               value={formData.whatIdea} onChange={(v) => handleInputChange('whatIdea', v)}
               color={ACCENTS.what}
             />
 
-            <TextArea label="WHY?" subtitle="Why are you testing this change?"
+            <TextArea label="WHY?" subtitle="Why are you implementing this change?"
               placeholder="e.g. 'This will enable us to...; Families reported confusion about enrolment steps; educators wanted clearer referral pathways; data showed low MCH attendance.”"
               value={formData.whyReason} onChange={(v) => handleInputChange('whyReason', v)}
               color={ACCENTS.why}
@@ -249,7 +249,7 @@
               color={ACCENTS.who}
             />
 
-            <TextArea label="HOW?" subtitle="What practical steps will you take to make this happen? If another service wished to use your idea, what would they need to know?"
+            <TextArea label="HOW?" subtitle="What steps will you take to make this happen? If another service wished to use your idea, what would they need to know?"
               placeholder="E.g. 'First, we...', Co-design flyers, hold weekly planning huddles..."
               value={formData.howSteps} onChange={(v) => handleInputChange('howSteps', v)}
               color={ACCENTS.how}
@@ -263,7 +263,7 @@
               color={ACCENTS.where}
             />
 
-            <TextArea label="WHEN?" subtitle="The timeframe for testing this change."
+            <TextArea label="WHEN?" subtitle="The timeframe for this change."
               placeholder="E.g. Term 1 pilot, one-off event, ongoing..."
               value={formData.when} onChange={(v) => handleInputChange('when', v)}
               color={ACCENTS.when}
@@ -307,5 +307,6 @@
   </script>
 </body>
 </html>
+
 
 
